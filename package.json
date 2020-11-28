@@ -1,0 +1,69 @@
+{
+  "name": "foms-frontend",
+  "version": "1.0.0",
+  "description": "OZ Test web page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "SET NODE_ENV=development&& webpack-dev-server --config ./config/webpack.dev.js",
+    "build": "SET NODE_ENV=production&& webpack --config ./config/webpack.prod.js"
+  },
+  "keywords": [],
+  "author": "forcs",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "babel-preset-mobx": "^2.0.0",
+    "babel-preset-react-app": "^10.0.0",
+    "case-sensitive-paths-webpack-plugin": "^2.3.0",
+    "css-loader": "^5.0.1",
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-webpack-plugin": "^2.2.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.2.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "postcss-flexbugs-fixes": "^5.0.0",
+    "postcss-loader": "^4.0.4",
+    "postcss-normalize": "^9.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-safe-parser": "^5.0.2",
+    "prettier": "^2.1.2",
+    "react-hot-loader": "^4.13.0",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^4.2.3",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-manifest-plugin": "^2.2.0",
+    "webpack-merge": "^5.3.0",
+    "workbox-webpack-plugin": "^5.1.4"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "clsx": "^1.1.1",
+    "qs": "^6.9.4"
+  },
+  "browserslist": {
+    "production": [
+      "> .2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "last 1 ie version"
+    ]
+  }
+}
