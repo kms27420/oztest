@@ -164,7 +164,7 @@ export default class extends Utils {
   }
 
   static typeCheck(condKey, param, paramName) {
-    const isNegative = condKey.includes(`Not`);
+    const isNegative = condKey.indexOf(`Not`) !== -1;
     condKey = condKey.replace(`Not`, ``);
     const condFunc = this[condKey];
 
@@ -181,7 +181,7 @@ export default class extends Utils {
   }
 
   static instanceCheck(condKey, param, Clz, paramName) {
-    const isNegative = condKey.includes(`Not`);
+    const isNegative = condKey.indexOf(`Not`) !== -1;
     condKey = condKey.replace(`Not`, ``);
     const condFunc = this[condKey];
     if (

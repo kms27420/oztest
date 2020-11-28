@@ -38,7 +38,7 @@ export default class extends Utils {
     this.appendCss(ele, css);
 
     Object.keys(params).forEach((key) => {
-      if ([`tagName`, `children`, `style`, `css`].includes(key))
+      if ([`tagName`, `children`, `style`, `css`].indexOf(key) !== -1)
         return;
       if (!TypeChecker.isUndefined(ele[key])) ele[key] = params[key];
       else ele.setAttribute(key, params[key]);
